@@ -1,0 +1,9 @@
+#!/bin/bash
+# This script requires the docker postgres image (docker pull postgres)
+
+# load .env file
+eval $(egrep -v '^#' .env | xargs)
+
+# run postgres instance
+sudo docker run --rm --name asrg-postgres -e POSTGRES_PASSWORD=$POSTGRES_PW -e POSTGRES_USER=$POSTGRES_USER -e POSTGRES_DB=$POSTGRES_DB -d -p 5432:5432  postgres
+
