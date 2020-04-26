@@ -1,4 +1,7 @@
 #!/bin/bash
+# This script connects you to the psql shell.
+# Example: Fetch users
+#   select * from public.user;
 
 # load .env file
 eval $(egrep -v '^#' .env | xargs)
