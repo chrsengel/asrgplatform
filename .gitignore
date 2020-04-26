@@ -1,0 +1,12 @@
+venv
+.env
+*.pyc
+*.pyo
+.installed.cfg
+build/
+bin
+dist
+parts
+lib
+lib64
+node_modules
