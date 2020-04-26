@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# load .env file
+eval $(egrep -v '^#' .env | xargs)
+
+sudo docker exec -it asrg-postgres psql -U $POSTGRES_USER $POSTGRES_DB

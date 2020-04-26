@@ -1,4 +1,4 @@
 #!/bin/bash
 # This script stops the postgres instance.
 
-sudo docker rm -f $(sudo docker ps | grep postgres | awk '{print }')
+sudo docker rm -f $(sudo docker ps | grep postgres | awk '{print }') 2>/dev/null
